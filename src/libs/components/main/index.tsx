@@ -1,7 +1,7 @@
 const Main = () => {
 	return (
 		<div>
-			MAGNUS'24 main page
+			MAGNUS&apos;24 main page
 		</div>
 	)
 }
