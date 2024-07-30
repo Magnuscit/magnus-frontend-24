@@ -41,8 +41,8 @@ const Countdown = () => {
           <section className="h-2 flex-grow bg-black" />
         </section>
         <p className="w-96 text-black fontmono text-center text-xs">
-          Artificial Intelligence &#10209; Machine Learning &#10209; Collage
-          Symphosyum &#10209; Cultural &#10209; Learn &#10209; Grow &#10209;
+          Artificial Intelligence &#10209; Machine Learning &#10209; College
+          symposium &#10209; Cultural &#10209; Learn &#10209; Grow &#10209;
           Hack &#10209; Build &#10209; Chennai &#10209; Tamil Nadu
         </p>
       </section>
