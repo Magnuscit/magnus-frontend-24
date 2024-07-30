@@ -1,9 +1,7 @@
 "use client";
 
-import Marquee from "react-fast-marquee";
 import { Anton } from "next/font/google";
 import { useEffect, useState } from "react";
-import CountUp from "react-countup";
 import { calculateTimeLeft } from "@/libs/utils";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
@@ -21,28 +19,31 @@ const Countdown = () => {
 
   return (
     <main
-      className={`h-screen w-full bg-black flex relative flex-col items-center justify-center select-none ${anton.className}`}
+      className={`h-screen w-full bg-purple-100 flex relative flex-col items-center justify-center select-none`}
     >
       <section className="flex flex-col items-center relative justify-center">
-        <section className="h-2 w-full bg-white my-3" />
-        <h1 className="text-white text-[200px] leading-none font-black">
+        <section className="h-2 w-full bg-black my-3" />
+        <h1
+          className={`text-black text-[200px] leading-none font-black  ${anton.className}`}
+        >
           MAGNUS
         </h1>
         <section className="flex w-full justify-between px-1">
-          <h1 className="text-white text-3xl font-black self-end">
+          <h1 className="text-black text-3xl font-black self-end">
             T - {timeLeft.days} / {timeLeft.hours} / {timeLeft.minutes} /{" "}
             {formatTime(timeLeft.seconds)}
           </h1>
-          <h1 className="text-white text-3xl font-black self-end">2024</h1>
+          <h1 className="text-black text-3xl font-black self-end">2024</h1>
         </section>
         <section className="flex items-center space-x-4 justify-between w-full my-3">
-          <section className="h-2 flex-grow bg-white" />
-          <h1 className="text-white font-mono">Presented by CIT</h1>
-          <section className="h-2 flex-grow bg-white" />
+          <section className="h-2 flex-grow bg-black" />
+          <h1 className="text-black font-bold">Presented by CIT</h1>
+          <section className="h-2 flex-grow bg-black" />
         </section>
-        <p className="w-96 text-white font-mono text-center text-xs">
-          Artificial Intelligence - Machine Learning - Collage Symphosyum -
-          Cultural - Learn - Grow - Hack - Build - Chennai - Tamil Nadu
+        <p className="w-96 text-black fontmono text-center text-xs">
+          Artificial Intelligence &#10209; Machine Learning &#10209; Collage
+          Symphosyum &#10209; Cultural &#10209; Learn &#10209; Grow &#10209;
+          Hack &#10209; Build &#10209; Chennai &#10209; Tamil Nadu
         </p>
       </section>
     </main>
