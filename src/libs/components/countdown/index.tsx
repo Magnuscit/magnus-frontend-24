@@ -30,20 +30,20 @@ const Countdown = () => {
         </h1>
         <section className="flex w-full justify-between px-1">
           <h1 className="text-black text-xl md:text-3xl font-black self-end">
-            T - {timeLeft.days} / {timeLeft.hours} / {timeLeft.minutes} /{" "}
+            T - {timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes} :{" "}
             {formatTime(timeLeft.seconds)}
           </h1>
-          <h1 className="text-black text-xl md:text-3xl font-black self-end">2024</h1>
+          <h1 className="text-black text-xl md:text-3xl font-black self-end">
+            2024
+          </h1>
         </section>
         <section className="flex items-center space-x-4 justify-between w-full my-3">
           <section className="h-2 flex-grow bg-black" />
           <h1 className="text-black font-bold">By CSE (AIML)</h1>
           <section className="h-2 flex-grow bg-black" />
         </section>
-        <p className="w-96 text-black fontmono text-center text-xs">
-          Artificial Intelligence &#10209; Machine Learning &#10209; College
-          symposium &#10209; Cultural &#10209; Learn &#10209; Grow &#10209;
-          Hack &#10209; Build &#10209; Chennai &#10209; Tamil Nadu
+        <p className="text-black fontmono text-center text-xs">
+          &#10209; Get ready to delve in the celebration of Artificial Intelligence and Machine Learning at Magnus&apos;24 &#10209;
         </p>
       </section>
     </main>
