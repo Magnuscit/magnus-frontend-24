@@ -9,11 +9,7 @@ export const metadata: Metadata = {
 	description: "A National level technical symposium organized by the Department of Artificial Intelligence and Machine Learning, Chennai Institute of Technology.",
 };
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
