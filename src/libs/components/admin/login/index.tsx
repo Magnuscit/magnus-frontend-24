@@ -41,7 +41,7 @@ const AdminLogin = () => {
 				<div className="flex flex-col items-center gap-12 w-full">
 					<div>
 						<h1 className="text-black text-3xl text-center font-bold">Admin Auth</h1>
-						<div className="text-center">*Magnus'24*</div>
+						<div className="text-center">*Magnus&apos;24*</div>
 					</div>
 					<div className="flex flex-col gap-2">
 						<input onChange={e => setId(e.target.value)} placeholder="id" className="w-[350px] p-2 border-black border-[2px]" />
