@@ -14,7 +14,7 @@ const Loading = () => {
 			<div className="flex flex-col items-center gap-12 w-full">
 				<div>
 					<h1 className="text-black text-[50px] text-center font-bold">Loading{'.'.repeat(dots)}</h1>
-					<div className="text-center">*Magnus'24*</div>
+					<div className="text-center">*Magnus&apos;24*</div>
 				</div>
 			</div>
 		</main>

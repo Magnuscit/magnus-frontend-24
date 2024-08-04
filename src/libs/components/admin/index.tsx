@@ -11,7 +11,7 @@ const Admin = () => {
 			<div className="flex flex-col gap-8">
 				<div>
 					<h1 className="text-black text-3xl text-center font-bold">Admin Panel</h1>
-					<div className="text-center">*Magnus'24*</div>
+					<div className="text-center">*Magnus&apos;24*</div>
 				</div>
 				<div className="flex flex-col gap-2">
 					<button onClick={() => router.push("/admin/sponsormail")} className="bg-black w-[350px] p-4 text-white hover:bg-[#303030]">
