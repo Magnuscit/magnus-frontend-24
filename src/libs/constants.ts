@@ -1,2 +1,5 @@
-export const API_URL = process.env.API_URL || 'http://localhost:6969';
-export const COUNTDOWN = process.env.COUNTDOWN === 'true';
+import { config } from 'dotenv';
+config();
+
+export const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:6969';
+export const COUNTDOWN = process.env.NEXT_PUBLIC_COUNTDOWN === 'true';

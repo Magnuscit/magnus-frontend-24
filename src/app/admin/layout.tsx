@@ -10,7 +10,6 @@ export default function AdminLayout({ children, }: { children: React.ReactNode }
 	const router = useRouter()
 	const pathname = usePathname()
 	const [loading, setLoading] = useState(true)
-
 	useEffect(() => {
 		const verifyToken = async () => {
 			try {
