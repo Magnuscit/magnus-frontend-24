@@ -1,6 +1,6 @@
 "use client"
 
-import Loading from "@/libs/components/loading"
+import Loading from "@/components/loading"
 import { useRouter, usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 import axios from "axios"

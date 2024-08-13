@@ -1,4 +1,4 @@
-import { Admin } from "@/libs/components";
+import { Admin } from "@/components";
 
 const AdminPage = () => {
 	return <Admin />;

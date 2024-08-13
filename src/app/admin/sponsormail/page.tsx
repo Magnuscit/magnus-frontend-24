@@ -1,4 +1,4 @@
-import { AdminSponsorMail } from "@/libs/components"
+import { AdminSponsorMail } from "@/components"
 
 const AdminSponsorMailPage = () => {
 	return <AdminSponsorMail />
