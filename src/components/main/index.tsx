@@ -8,6 +8,7 @@ import NavBar from "../NavBar";
 import Link from "next/link";
 import Image from "next/image";
 import { IMGPlaceHolder } from "@/assets";
+import TeamCard from "../TeamCard";
 
 const Main = () => {
   return (
@@ -59,52 +60,22 @@ const Main = () => {
         </section>
       </section>
 
-      <section className="w-full min-h-screen bg-cream grid grid-cols-2 cus-grid-rows-3 relative">
-        <div className="relative h-full w-full bg-white">
-          <Image
-            alt="place"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            loading="lazy"
-            src={IMGPlaceHolder}
-          />
-        </div>
-        <div className="relative h-full w-full bg-white">
-          <Image
-            alt="place"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            loading="lazy"
-            src={IMGPlaceHolder}
-          />
-        </div>
-        <div className="col-span-2 w-full bg-accent text-cream flex items-center justify-center ">
-          <h1 className="text-7xl w-full text-center font-bold tracking-[.5em]">
-            MEET THE TEAM
+      <section className="w-full bg-cream py-24 flex flex-col items-center">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-accent text-[100px] leading-[10px] font-black">
+            MEET THE
+          </h1>
+          <h1 className="text-accent text-[250px] leading-none font-black">
+            TEAM
           </h1>
         </div>
-        <div className="relative h-full w-full bg-white">
-          <Image
-            alt="place"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            loading="lazy"
-            src={IMGPlaceHolder}
-          />
-        </div>
-        <div className="relative h-full w-full bg-white">
-          <Image
-            alt="place"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            loading="lazy"
-            src={IMGPlaceHolder}
-          />
-        </div>
+
+        <section className="gap-y-8 w-full h-full grid grid-cols-2 grid-rows-2 place-items-center max-w-2xl">
+          <TeamCard name="Krishna Kumar" title="President" />
+          <TeamCard name="I Don;t Know" title="Vice President" />
+          <TeamCard name="Rahul M Navneeth" title="Secretary" />
+          <TeamCard name="I Don;t Know" title="Joint Secretary" />
+        </section>
       </section>
 
       <section className="relative flex flex-col items-center justify-end h-96 w-full bg-accent overflow-hidden">
