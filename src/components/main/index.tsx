@@ -2,43 +2,52 @@ import NavBar from "../NavBar";
 
 const Main = () => {
   return (
-    <main className="relative min-h-screen w-full bg-black z-0">
+    <main className="relative min-h-screen w-full">
       <NavBar />
 
-      <section className="relative min-h-screen w-full flex flex-col items-center justify-center">
-        <div className="absolute right-0 left-0 mx-auto -top-20 bg-orange-400 w-96 h-96 blur-[170px] rounded-full -z-10"></div>
-        <div className="h-full w-2/3 absolute graph-paper -z-10" />
-        <h1 className="text-[150px] text-white font-black">MAGNUS</h1>
-        <button className="text-xl border text-white px-3 py-1 rounded-sm border-white">
-          Explore
-        </button>
+      <section className="relative min-h-screen w-full flex flex-col  justify-center bg-cream p-24">
+        <div className="absolute top-0 right-0 h-screen w-full graph-paper" />
+        <h1 className="z-10 text-[200px] text-accent font-black leading-none">
+          MAGNUS.
+        </h1>
+        <p className="z-10 text-black font-bold text-xl">
+          a national level technical symposiyum
+        </p>
       </section>
 
-      <section className="min-h-screen w-full flex items-center justify-center px-32">
-        <div className="flex flex-col w-full h-full">
-          <h1 className="text-white font-semibold text-5xl">About Us</h1>
-          <p className="text-white text-base">
+      <section className="w-full flex flex-col items-center bg-cream justify-center p-24 relative overflow-hidden">
+        <div className="h-full  font-black text-accent self-end">
+          <h1 className="text-[240px] line-clamp-none leading-none">
+            <span className="text-[300px] text-black">&#8641;</span>ABOUT
+          </h1>
+        </div>
+
+        <div className="flex flex-col h-full self-start">
+          <p className="text-black max-w-4xl font-bold text-3xl textcenter">
             Magnus is the technical symposium of the department of
             CSE(Artificial Intelligence and Machine Learning) at Chennai
-            Institute of Technology which was founded in 2023. With over a
-            footfall of 500 in its first year, it is an event that celebrates
-            the achievements in the field of AI along with Machine Learning. At
-            Magnus, participants get to immerse themselves in various activities
-            such as workshops on AI and Open-Source platforms, non-technical
-            events like Weeb Trivia and Film Fusion along with technical events
-            like paper and project presentations, motivating them to think
-            outside the box and incorporate AI in real life.
+            Institute of Technology which was founded in 2023.
           </p>
         </div>
-        <div className="h-full w-full bg-white"></div>
+
+        <div className="h-96 w-96 rounded-full bg-accent absolute -right-10 -bottom-48" />
       </section>
 
-      <section className="min-h-screen w-full bg-purple-900 flex flex-col items-center justify-center p-24">
-        <h1 className="text-white font-bold text-7xl">Events</h1>
-        <div className="py-10 w-full bg-red-800 flex items-center justify-center gap-x-4">
-          <section className="h-64 w-56 bg-white"> </section>
-          <section className="h-64 w-56 bg-white"> </section>
-        </div>
+      <section className="w-full bg-cream flex flex-col items-center justify-center">
+        <h1 className="font-bold text-cream bg-accent text-6xl tracking-[1em] border-t w-full text-center py-5">
+          EVENTS
+        </h1>
+        <section className="w-full h-[500px] flex">
+          <div className="w-full flex items-center justify-center border-r border-black bg-cream">
+            Sports
+          </div>
+          <div className="w-full flex items-center justify-center border-r border-black bg-cream">
+            Technical
+          </div>
+          <div className="w-full flex items-center justify-center border-r border-black bg-cream">
+            Non-Technical
+          </div>
+        </section>
       </section>
     </main>
   );
