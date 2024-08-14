@@ -12,3 +12,7 @@
     250px 250px,
     10px 10px;
 }
+
+.cus-grid-rows-3 {
+  grid-template-rows: 1fr 100px 1fr;
+}
