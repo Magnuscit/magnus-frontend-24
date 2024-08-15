@@ -21,24 +21,20 @@ export default function NavBar() {
       className={`flex justify-end items-center transition-all duration-200 ease-in w-full p-10 fixed top-0 z-[999] bg-nocl font-filgen`}
     >
       <section
-        className={`absolute top-0 text-right w-full h-screen flex flex-col items-end p-24 text-7xl font-black justify-center bg-white ${!isOpen ? "-right-[5000px]" : "right-0"} transition-all duration-500 ease-in-out drop-shadow-lg`}
+        className={`absolute top-0 text-right w-full h-screen flex flex-col items-end p-12 lg:p-24 text-7xl font-black justify-center bg-white ${!isOpen ? "-right-[5000px]" : "right-0"} transition-all duration-500 ease-in-out drop-shadow-lg`}
       >
+        <Link href="/about">
+          <h1 className="hover:text-accent">Home</h1>
+        </Link>
         <Link href="/about">
           <h1 className="hover:text-accent">About</h1>
         </Link>
         <Link href="/events">
           <h1 className="hover:text-accent">Events</h1>
         </Link>
-        <Link href="/upcoming-events">
-          <h1 className="hover:text-accent">Upcoming</h1>
-        </Link>
-        <Link href="/socials">
-          <h1 className="hover:text-accent">Socials</h1>
-        </Link>
         <Link href="/team">
           <h1 className="hover:text-accent">Team</h1>
         </Link>
-        <div className="md:hidden block">hola</div>
       </section>
 
       <div className="flex items-center gap-x-2">

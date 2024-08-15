@@ -9,7 +9,7 @@ interface prop {
 export default function TeamCard({name, title}: prop) {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="shadow-[5px_5px_0px_0px_rgba(245,72,7)] relative h-72 w-72 bg-red-300 rounded-full overflow-hidden">
+      <div className="shadow-[5px_5px_0px_0px_rgba(245,72,7)] relative h-32 w-32 lg:h-72 lg:w-72 bg-red-300 rounded-full overflow-hidden">
         <Image
           src={IMGPlaceHolder}
           alt="PLACEHOLDER"
