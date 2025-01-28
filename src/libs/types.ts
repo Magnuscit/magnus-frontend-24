@@ -11,7 +11,6 @@ type DETAIL = {
 
 type CONTACT = {
     incharge: string;
-    email: string;
     phno: string;
 };
 
@@ -22,6 +21,7 @@ export type EVENT = {
     title: string;
     tagline: string;
     description: string;
+    registration: Array<string>;
     rules: Array<string>;
     details: DETAIL;
     prizes: Array<string>;
