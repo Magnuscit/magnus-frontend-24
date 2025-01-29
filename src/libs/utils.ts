@@ -21,8 +21,8 @@ export const calculateTimeLeft = () => {
 };
 
 
-export const REPO_OWNER = "cittakshashila";
-export const REPO_NAME = "EVENTS-DATA-24";
+export const REPO_OWNER = "Magnuscit";
+export const REPO_NAME = "events-data-25";
 
 export const MEDIA_URL = (ID: string, MID: number): MEDIA_URL_TYPE => {
     return `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/master/events/${ID}/assets/${MID}.png`;
