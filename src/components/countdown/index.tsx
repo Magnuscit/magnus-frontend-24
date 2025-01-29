@@ -34,7 +34,7 @@ const Countdown = () => {
             {formatTime(timeLeft.seconds)}
           </h1>
           <h1 className="text-black text-xl md:text-3xl font-black self-end">
-            2024
+            2025
           </h1>
         </section>
         <section className="flex items-center space-x-4 justify-between w-full my-3">
@@ -43,7 +43,8 @@ const Countdown = () => {
           <section className="h-2 flex-grow bg-black" />
         </section>
         <p className="text-black fontmono text-center text-xs">
-          &#10209; Get ready to delve in the celebration of Artificial Intelligence and Machine Learning at Magnus&apos;24 &#10209;
+          &#10209; Get ready to delve in the celebration of Artificial
+          Intelligence and Machine Learning at Magnus&apos;25 &#10209;
         </p>
       </section>
     </main>

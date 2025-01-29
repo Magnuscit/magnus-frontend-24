@@ -17,8 +17,12 @@ const Main = () => {
         <div className="absolute top-0 right-0 h-full w-full graph-paper" />
 
         <div className="text-center xl:hidden">
-          <h1 className="text-[140px] font-black text-accent leading-[70px]">MAG</h1>
-          <h1 className="text-[140px] font-black text-accent leading-none">NUS</h1>
+          <h1 className="text-[140px] font-black text-accent leading-[70px]">
+            MAG
+          </h1>
+          <h1 className="text-[140px] font-black text-accent leading-none">
+            NUS
+          </h1>
         </div>
 
         <h1 className="z-10 text-[65px] lg:text-[200px] text-accent font-black leading-none hidden xl:block lg:self-start">
@@ -85,9 +89,9 @@ const Main = () => {
 
         <section className="gap-y-8 w-full h-full grid grid-cols-2 grid-rows-2 place-items-center max-w-2xl pt-10">
           <TeamCard name="Krishna Kumar" title="President" />
-          <TeamCard name="I Don;t Know" title="Vice President" />
+          <TeamCard name="Kishore Kannan" title="Vice President" />
           <TeamCard name="Rahul M Navneeth" title="Secretary" />
-          <TeamCard name="I Don;t Know" title="Joint Secretary" />
+          <TeamCard name="Devanathan" title="Joint Secretary" />
         </section>
       </section>
 
