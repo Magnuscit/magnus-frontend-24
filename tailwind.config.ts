@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         accent: "#F54807",
+        "accent-hover": "#F85E20",
         // accent: "#FFDC0D",
         cream: "#F7F6F2",
         grey: "#272727",
