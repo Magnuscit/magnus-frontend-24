@@ -24,7 +24,7 @@ export default function NavBar() {
       <section
         className={`absolute top-0 text-right w-full h-screen flex flex-col items-end p-12 lg:p-24 text-7xl font-black justify-center bg-white ${!isOpen ? "-right-[5000px]" : "right-0"} transition-all duration-500 ease-in-out drop-shadow-lg`}
       >
-        <Link href="/about">
+        <Link href="/">
           <h1 className="hover:text-accent">Home</h1>
         </Link>
         <Link href="/about">
@@ -33,9 +33,11 @@ export default function NavBar() {
         <Link href="/events">
           <h1 className="hover:text-accent">Events</h1>
         </Link>
+        {/*
         <Link href="/team">
           <h1 className="hover:text-accent">Team</h1>
         </Link>
+        */}
       </section>
 
       <div className="flex items-center gap-x-2">

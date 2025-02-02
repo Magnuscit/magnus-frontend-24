@@ -6,7 +6,12 @@ type DETAIL = {
     | "TECHNICAL"
     | "ONLINE EVENT";
     date: string;
-    time: [number, number];
+    time: string;
+    banner: string;
+    thumb: string;
+    price: number;
+    min_team_size: number;
+    max_team_size: number;
 };
 
 type CONTACT = {
@@ -14,21 +19,15 @@ type CONTACT = {
     phno: string;
 };
 
-
-
 export type EVENT = {
     id: string;
     title: string;
-    tagline: string;
     description: string;
     registration: Array<string>;
     rules: Array<string>;
     details: DETAIL;
     prizes: Array<string>;
     contacts: Array<CONTACT>;
-    links: Array<string>;
-    glink?: string;
-    fee: number;
     category: "WK" | "GEN" | "PRO";
 };
 

@@ -11,7 +11,7 @@ import { useEffect, useRef, useState } from "react";
 export const useProfileButton = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
   const [user, setUser] = useState<TokenResponse>();
-  const { removeToken, setAcessToken } = useAuth((state) => state);
+  const { removeToken, setAcessToken, auth } = useAuth((state) => state);
 
   const menuRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLImageElement>(null);
@@ -30,43 +30,30 @@ export const useProfileButton = () => {
       }
     });
 
-    const accessToken =
-      user?.access_token || localStorage.getItem("access_token");
-    if (accessToken) {
-      localStorage.setItem("access_token", accessToken);
-      axios
-        .get(
-          `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${accessToken}`,
-          {
+    const fetch = async () => {
+      const accessToken = user?.access_token || auth?.access_token;
+      if (accessToken) {
+        localStorage.setItem("access_token", accessToken);
+        try {
+          const response = await axios.post(`${API_URL}/user/login`, {
+            token: accessToken,
             headers: {
               Authorization: `Bearer ${accessToken}`,
               Accept: "application/json",
             },
-          },
-        )
-        .then((res) => {
-          setAcessToken({ ...res.data, access_token: accessToken });
-        })
-        .catch(() => {
-          localStorage.removeItem("access_token");
-        });
+          });
+          const res = response.data;
+          setAcessToken({ ...res.data, jwt: res.jwt });
+        } catch (e) {
+          removeToken();
+        }
+      }
+    };
 
-      axios
-        .post(`${API_URL}/user/login`, {
-          token: accessToken,
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-            Accept: "application/json",
-          },
-        })
-        .catch(() => {
-          localStorage.removeItem("access_token");
-        });
-    }
+    if (!auth) fetch();
   }, [user, setAcessToken]);
 
   const logOut = () => {
-    axios.get(`${API_URL}/user/logout`);
     googleLogout();
     localStorage.removeItem("access_token");
     removeToken();

@@ -24,13 +24,12 @@ const Event = ({ params: { id } }: { params: { id: string } }) => {
     fetchData();
   }, []);
 
-  if (!data) {
+  if (!data)
     return (
-      <div className="">
-      Loading...
-      </div>
+      <main className="w-full min-h-screen flex items-center px-20">
+        <h1 className="text-7xl font-bold text-accent">LOADING...</h1>
+      </main>
     );
-  }
 
   return (
     <>

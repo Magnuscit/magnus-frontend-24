@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         accent: "#F54807",
         "accent-hover": "#F85E20",
-        // accent: "#FFDC0D",
+        // accent: "#5B0B5C",
         cream: "#F7F6F2",
         grey: "#272727",
         lightcharcoal: "#33333339",

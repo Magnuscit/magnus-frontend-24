@@ -2,6 +2,8 @@ import type {
   INFO_URL as INFO_URL_TYPE,
   MEDIA_URL as MEDIA_URL_TYPE,
 } from "./types";
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export const targetDate: string = "17/02/2025";
 
@@ -37,3 +39,7 @@ export const INFO_URL = (ID: string): INFO_URL_TYPE => {
 };
 
 export const FOLDER_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/master/info.json`;
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}

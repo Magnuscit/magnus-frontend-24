@@ -16,7 +16,13 @@ export default function Events() {
     | "ONLINE EVENT";
 
   type Id = string;
-  type infoType = { name: string; type: Type; date: string };
+  type infoType = {
+    name: string;
+    type: Type;
+    date: string;
+    description: string;
+    thumb: string;
+  };
 
   const [data, setData] = useState<Record<Id, infoType> | null>(null);
 
@@ -34,19 +40,30 @@ export default function Events() {
     fetchData();
   }, []);
 
+  if (!data)
+    return (
+      <main className="w-full min-h-screen flex items-center px-20">
+        <h1 className="text-7xl font-bold text-accent">LOADING...</h1>
+      </main>
+    );
+
   return (
-    <div>
-      <div className="relative bg-beige w-full p-10 xl:p-20 flex flex-col items-center justify-center overflow-clip">
+    <div className=" bg-cream">
+      <div className="relative w-full flex flex-col items-center justify-center overflow-clip pb-32 ">
         <NavBar />
       </div>
-      <div className="items-center justify-center flex lg:px-10 lg:pt-0 relative">
-        <section className="max-w-7xl grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div className="items-center justify-center flex lg:px-10 lg:pt-0 relative pb-10 flex-col">
+        <h1 className="text-6xl lg:text-8xl lg:px-4 pb-6 lg:pb-0 font-black text-accent lg:self-start">EVENTS</h1>
+        <section className="max-w-7xl grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 ">
           {Object.entries(data || {}).map(([key, value], index: number) => (
             <EventsCardComponent
               key={key}
               eventsId={key}
               title={value.name}
-              description={value.type}
+              description={value.description}
+              type={value.type}
+              date={value.date}
+              image={value.thumb}
               i={index}
             />
           ))}

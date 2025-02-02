@@ -8,6 +8,7 @@ export interface User {
     picture: string;
     access_token: string;
     verified: boolean;
+    jwt?: string;
 }
 
 interface AuthState {
@@ -50,4 +51,15 @@ export const useAuth = create<AuthState>()(
     },
   ),
 );
+
+interface RazorpayStore {
+  isRazorpayOpen: boolean;
+  openRazorpay: () => void;
+  closeRazorpay: () => void;
+}
+export const useRazorpayStore = create<RazorpayStore>((set) => ({
+  isRazorpayOpen: false,
+  openRazorpay: () => set({ isRazorpayOpen: true }),
+  closeRazorpay: () => set({ isRazorpayOpen: false }),
+}));
 
