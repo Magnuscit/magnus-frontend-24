@@ -8,34 +8,36 @@ import { INFO_URL } from "@/libs/utils";
 import SingleEventComponent from "@/components/events/SingleEventComponent";
 
 const Event = ({ params: { id } }: { params: { id: string } }) => {
-  const [data, setData] = useState<EVENT | null>(null);
+	const [data, setData] = useState<EVENT | null>(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(INFO_URL(id));
-        const html = await response.text();
-        const jsonContent = JSON.parse(html);
-        setData(jsonContent);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchData();
-  }, []);
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await fetch(INFO_URL(id));
+				const html = await response.text();
+				const jsonContent = JSON.parse(html);
+				setData(jsonContent);
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			}
+		};
+		fetchData();
+	}, []);
 
-  if (!data)
-    return (
-      <main className="w-full min-h-screen flex items-center px-20">
-        <h1 className="text-7xl font-bold text-accent">LOADING...</h1>
-      </main>
-    );
+	if (!data)
+		return (
+			<main className="w-full overflow-hidden font-gro min-h-screen flex flex-col gap-6 items-start px-20">
+				{[...Array(20)].map((_) => (
+					<h1 className="text-7xl font-black text-accent">LOADING...</h1>
+				))}
+			</main>
+		);
 
-  return (
-    <>
-      <NavBar />
-      <SingleEventComponent eventData={data} />
-    </>
-  );
+	return (
+		<>
+			<NavBar />
+			<SingleEventComponent eventData={data} />
+		</>
+	);
 };
 export default Event;
