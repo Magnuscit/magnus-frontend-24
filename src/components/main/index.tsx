@@ -74,72 +74,59 @@ function LandingPage() {
         </div>
 
         {/* About section */}
-        <div className="w-full min-h-screen h-full flex flex-col items-start justify-start pt-4 bg-cream2 relative font-space mix-blend-screen">
-          <div className="text-center text-black overflow-hidden h-full">
-            <Marquee className="text-xl sm:text-2xl md:text-3xl font-bold w-full bg-black text-cream py-5 shadow-lg">
-              {"DEPARTMENT OF CSE (AIML) * ".repeat(1000)}
-            </Marquee>
-            <div className="flex flex-col items-center justify-center h-full">
-              <div className="relative flex flex-col items-center justify-center h-full">
-                <Polaroid
-                  _class="z-[100] -mt-[100px] scale-75 sm:scale-100"
-                  description="absolute lorem ipsum ass shit"
-                />
-                <Polaroid
-                  _class="absolute -rotate-[10deg] -z-1 hidden sm:block sm:mr-[200px] md:mr-[350px]"
-                  description="lorem ipsum ass shit"
-                />
-                <Polaroid
-                  _class="absolute rotate-[10deg] -z-2 hidden sm:block sm:-mr-[200px] md:-mr-[350px]"
-                  description="lorem ipsum ass shit"
-                />
-              </div>
-              <p className="w-full px-4 md:w-[700px] h-4/6 text-center uppercase font-bold text-base sm:text-lg md:text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
+        <div className="w-full flex flex-col items-center justifycenter bg-cream2 font-space mix-blend-screen lg:min-h-screen space-y-10 py-10">
+          <Marquee className="text-xl sm:text-2xl md:text-3xl font-bold w-full bg-black text-cream py-5 shadow-lg ">
+            {"DEPARTMENT OF CSE (AIML) * ".repeat(1000)}
+          </Marquee>
+
+          <div className="hidden sm:block sm:h-24 sm:w-full" />
+
+          <div className="w-full flex-grow items-center flex justify-center flex-col px-5 relative md:min-h-[200px]">
+            <Polaroid _class=" hidden md:flex md:absolute  translate-x-24  rotate-[10deg] " description="YOKOSO"/>
+            <Polaroid _class=" hidden md:flex md:absolute -translate-x-24 -rotate-[10deg] " description="YOKOSO"/>
+            <Polaroid _class=" md:absolute  " description="YOKOSO"/>
           </div>
+
+          <div className="hidden sm:block sm:h-24 sm:w-full" />
+
+          <p className="w-full px-4 text-center uppercase font-bold text-base sm:text-lg md:text-xl lg:max-w-3xl mt-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
         </div>
 
-        {/* Gallery section */}
-        <div className="w-full h-full flex flex-col items-start justify-start pt-4 bg-cream2 relative font-space mix-blend-screen">
-          <div className="text-center text-black overflow-hidden h-full">
-            <Marquee className="text-xl sm:text-2xl md:text-3xl font-bold w-full bg-black text-cream py-5 shadow-lg">
-              {"MAGNUS SYMPOSIUM GALLERY * ".repeat(1000)}
-            </Marquee>
-            <div className="flex flex-col items-center justify-center h-full">
-              <div className="relative flex flex-col items-center justify-center h-full">
-                <Polaroid
-                  _class="z-[100] -mt-[100px] scale-75 sm:scale-100"
-                  description="absolute lorem ipsum ass shit"
-                />
-                <Polaroid
-                  _class="absolute -rotate-[10deg] -z-1 hidden sm:block sm:mr-[200px] md:mr-[350px]"
-                  description="lorem ipsum ass shit"
-                />
-                <Polaroid
-                  _class="absolute rotate-[10deg] -z-2 hidden sm:block sm:-mr-[200px] md:-mr-[350px]"
-                  description="lorem ipsum ass shit"
-                />
-              </div>
-              <p className="w-full px-4 md:w-[700px] h-4/6 text-center uppercase font-bold text-base sm:text-lg md:text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
+        {/* Glaray section */}
+        <div className="w-full flex flex-col items-center justifycenter bg-cream2 font-space mix-blend-screen lg:min-h-screen space-y-10 py-10">
+          <Marquee className="text-xl sm:text-2xl md:text-3xl font-bold w-full bg-black text-cream py-5 shadow-lg ">
+            {"DEPARTMENT OF CSE (AIML) * ".repeat(1000)}
+          </Marquee>
+
+          <div className="hidden sm:block sm:h-24 sm:w-full" />
+
+          <div className="w-full flex-grow items-center flex justify-center flex-col px-5 relative md:min-h-[200px]">
+            <Polaroid _class=" hidden md:flex md:absolute  translate-x-24  rotate-[10deg] " description="YOKOSO"/>
+            <Polaroid _class=" hidden md:flex md:absolute -translate-x-24 -rotate-[10deg] " description="YOKOSO"/>
+            <Polaroid _class=" md:absolute  " description="YOKOSO"/>
           </div>
+
+          <div className="hidden sm:block sm:h-24 sm:w-full" />
+
+          <p className="w-full px-4 text-center uppercase font-bold text-base sm:text-lg md:text-xl lg:max-w-3xl mt-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
         </div>
+
       </div>
     </>
   );
