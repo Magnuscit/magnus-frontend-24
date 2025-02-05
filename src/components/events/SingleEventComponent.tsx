@@ -113,7 +113,7 @@ const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
 			<section className="event-header">
 				<h1 className="lg:text-8xl text-5xl font-bold text-accent flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 ">
 					<div className="w-full text-left">{eventData.title}</div>
-					<h2 className="bg-accent w-full text-white text-[50px] flex flex-col items-center justify-center font-bold text-center">{eventData.details.type}</h2>
+					<span className="bg-accent w-full text-white text-[50px] flex flex-col items-center justify-center font-bold text-center">{eventData.details.type}</span>
 				</h1>
 				<p className="lg:text-xl text-center font-medium text-gray-800 pb-5 mt-6">
 					{eventData.description}

@@ -30,6 +30,9 @@ export default function NavBar() {
 				<Link href="/events">
 					<h1 onClick={() => setOpen(!isOpen)} className="hover:text-accent">EVENTS</h1>
 				</Link>
+				{/*<Link href="/team">
+					<h1 onClick={() => setOpen(!isOpen)} className="hover:text-accent">TEAM</h1>
+				</Link>*/}
 				{/*
         <Link href="/team">
           <h1 className="hover:text-accent">Team</h1>
@@ -45,7 +48,7 @@ export default function NavBar() {
 					{isOpen ? <IconX /> : <IconMenu2 />}
 				</h1>
 			</div>
-      <ProfileButton />
+			<ProfileButton />
 		</nav>
 	);
 }
