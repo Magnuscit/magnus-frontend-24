@@ -45,6 +45,7 @@ export default function NavBar() {
 					{isOpen ? <IconX /> : <IconMenu2 />}
 				</h1>
 			</div>
+      <ProfileButton />
 		</nav>
 	);
 }

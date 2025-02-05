@@ -109,10 +109,10 @@ const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
 	}, [auth?.jwt, eventData.title]);
 
 	return (
-		<main className="bg-cream font-gro uppercase w-full min-h-screen p-10 px-5 lg:px-24 pt-24">
+		<main className="bg-cream font-space uppercase w-full min-h-screen p-10 px-5 lg:px-24 pt-24">
 			<section className="event-header">
-				<h1 className="lg:text-8xl text-5xl font-bold text-accent flex flex-row">
-					<div className="w-full text-center">{eventData.title}</div>
+				<h1 className="lg:text-8xl text-5xl font-bold text-accent flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 ">
+					<div className="w-full text-left">{eventData.title}</div>
 					<h2 className="bg-accent w-full text-white text-[50px] flex flex-col items-center justify-center font-bold text-center">{eventData.details.type}</h2>
 				</h1>
 				<p className="lg:text-xl text-center font-medium text-gray-800 pb-5 mt-6">
@@ -140,7 +140,7 @@ const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
 
 
 			<section className="lg:flex lg:space-x-10">
-				<div className="event-registration w-1/2">
+				<div className="event-registration w1/2">
 					<h2 className="text-3xl mt-4 font-medium text-accent">REGISTRATION</h2>
 					<ul>
 						{eventData.registration.map((item, index) => (
@@ -151,7 +151,7 @@ const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
 					</ul>
 				</div>
 
-				<div className="event-rules w-1/2">
+				<div className="event-rules w1/2">
 					<h2 className="text-3xl mt-4 font-medium text-accent">RULES</h2>
 					<ul>
 						{eventData.rules.map((rule, index) => (

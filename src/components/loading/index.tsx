@@ -9,7 +9,7 @@ const Loading = () => {
 
 	return (
 		<main
-			className={`h-screen w-full bg-purple-100 flex relative flex-col items-center justify-center select-none md:p-0 p-10`}
+			className={`h-screen w-full bg-purple-100 flex relative flex-col items-center justify-center select-none md:p-0 p-10 font-space`}
 		>
 			<div className="flex flex-col items-center gap-12 w-full">
 				<div>
