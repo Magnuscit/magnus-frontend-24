@@ -20,6 +20,7 @@ export default function Profile() {
 
 	useEffect(() => {
 		const fetchData = async () => {
+			if (!auth) return;
 			try {
 				const response = await axios.get(`${API_URL}/user/get`, {
 					withCredentials: true,
@@ -35,6 +36,7 @@ export default function Profile() {
 				}
 
 				const result = response.data.data.event_id;
+				console.log(result)
 				setData(result);
 			} catch (error) {
 				console.error("Error fetching data:", error);
@@ -46,20 +48,25 @@ export default function Profile() {
 	return (
 		<>
 			<NavBar />
-			<main className="bg-accent w-full min-h-screen text-cream p-3 sm:p-10 md:p-24">
-				<h1 className="text-6xl font-bold lg:text-9xl">
-					Your Registered Events
-				</h1>
-				{data.length === 0 && (
-					<h1 className="text-3xl">YOU HAVEN&apos;T REGISTERED FOR ANY EVENTS</h1>
-				)}
-				<ul className="pt-10">
-					{data.map((val, i) => (
-						<li key={i} className="text-xl lg:text-2xl font-light">
-							{i + 1} {val.name}
-						</li>
-					))}
-				</ul>
+			<main className="bg-accent font-space w-full h-full min-h-screen text-cream p-3 sm:p-10 md:p-24">
+				{data.length === 0 ? (
+					<div className="w-full h-full flex flex-col items-center justify-center">
+						<h1 className="text-3xl">* YOU HAVEN&apos;T REGISTERED FOR ANY EVENTS *</h1>
+					</div>
+				) :
+					<>
+						<h1 className="text-6xl font-bold">
+							YOUR REGISTERED EVENTS
+						</h1>
+						<ul className="pt-10">
+							{data.map((val, i) => (
+								<li key={i} className="text-xl lg:text-2xl font-light">
+									{i + 1} {val.name}
+								</li>
+							))}
+						</ul>
+					</>
+				}
 			</main>
 		</>
 	);

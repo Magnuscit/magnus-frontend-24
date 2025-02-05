@@ -31,6 +31,7 @@ interface Order {
 }
 
 const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
+	console.log(eventData)
 	const router = useRouter();
 	const { auth } = useAuth();
 	const { isRazorpayOpen, openRazorpay } = useRazorpayStore((e) => e);
@@ -175,24 +176,14 @@ const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
 			</section>
 
 			<div className="w-full flex flex-col items-center justify-center">
-				{eventData.details.type == "ONLINE" ?
-					<a
-						// @ts-ignore
-						href={eventData["gform"]}
-						className="bg-accent text-cream text-2xl font-bold px-3 py-2 mt-4 hover:bg-accent-hover"
-					>
-						* GFORM *
-					</a>
-					:
-					<button
-						onClick={handlePayment}
-						disabled={paymentDisabled}
-						className="bg-accent text-cream text-2xl font-bold px-3 py-2 mt-4 hover:bg-accent-hover"
-					>
-						* PAY NOW *
-					</button>
-
-				}			</div>
+				<a
+					// @ts-ignore
+					href={eventData["gform"]}
+					className="bg-accent cursor-pointer text-cream text-2xl font-bold px-3 py-2 mt-4 hover:bg-accent-hover"
+				>
+					* REGISTER *
+				</a>
+			</div>
 		</main>
 	);
 };

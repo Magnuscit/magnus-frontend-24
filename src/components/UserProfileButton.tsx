@@ -34,7 +34,7 @@ export default function ProfileButton() {
 			</section>
 
 			<section
-				className={`bg-cream font-gro absolute top-12 right-0 text-accent border-black border text-center text-sm min-w-52 transition-all ${!isOpen && "hidden"}`}
+				className={`bg-cream font-space absolute top-12 right-0 text-accent border-black border text-center text-sm min-w-52 transition-all ${!isOpen && "hidden"}`}
 				ref={menuRef}
 			>
 				{auth === null ? (
@@ -47,40 +47,32 @@ export default function ProfileButton() {
 						</button>
 					</div>
 				) : (
-					<>
+					<div className="p-0 flex flex-col items-center justify-between uppercase">
 						<Link
 							href="/u"
-							className="text-xl cursor-pointer px-3 font-mono hover:bg-slate-200 hover:text-grey w-full block"
+							className="text-xl cursor-pointer px-3 font-mono hover:bg-slate-200 hover:text-grey w-full whitespace-nowrap text-black py-3 block"
 						>
 							{auth.name}
 						</Link>
 						<Link
-							href="/u"
-							className="text-xs cursor-pointer px-3 font-mono hover:bg-slate-200 hover:text-grey block"
-						>
-							{auth.email}
-						</Link>
-
-						<hr className="my-2" />
-						<Link
 							href="/edit-name"
-							className="text-xs cursor-pointer my-1 px-3 font-mono hover:bg-slate-200 hover:text-grey block"
+							className="cursor-pointer bg-accent text-cream p-3 font-bold hover:bg-accent-hover w-full h-1/2 hover:text-white"
 						>
 							Edit Info
 						</Link>
 
-						<ul className="space-y-1">
+						<ul className="space-y-1 w-full">
 							<button
 								onClick={() => {
 									router.push("/");
 									logOut();
 								}}
-								className=" cursor-pointer bg-red-500 mx-3 py-1 text-cream font-mono hover:bg-red-400 text-center w-1/2 inline-block rounded-sm"
+								className="cursor-pointer bg-red-500 text-cream p-3 font-bold hover:bg-red-600 w-full h-1/2 hover:text-white"
 							>
-								Log Out
+								LOG OUT
 							</button>
 						</ul>
-					</>
+					</div>
 				)}
 			</section>
 		</section>
