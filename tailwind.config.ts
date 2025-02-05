@@ -10,7 +10,8 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				"gro": ['"Space Grotesk"', "serif"]
+				"gro": ['"Space Grotesk"', "serif"],
+				"space": ['var(--space-grotesk)', "mono"]
 			},
 			keyframes: {
 				thermal: {

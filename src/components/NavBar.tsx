@@ -19,7 +19,7 @@ export default function NavBar() {
 
 	return (
 		<nav
-			className={`flex font-gro justify-end items-center transition-all duration-200 ease-in w-full p-10 fixed top-0 z-[999] bg-nocl font-filgen space-x-4`}
+			className={`flex font-space justify-end items-center transition-all duration-200 ease-in w-full p-10 fixed top-0 z-[999] bg-nocl font-filgen space-x-4`}
 		>
 			<section
 				className={`absolute top-0 text-right w-full h-screen flex flex-col items-end p-12 lg:p-24 text-7xl font-black justify-center bg-cream ${!isOpen ? "-right-[5000px]" : "right-0"} transition-all duration-500 ease-in-out drop-shadow-lg`}

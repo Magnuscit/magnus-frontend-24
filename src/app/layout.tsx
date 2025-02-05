@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { CLIENT_ID } from "@/libs/constants";
 
 const inter = Inter({ subsets: ["latin"] });
+const space_grotesk = Space_Grotesk({
+  variable: "--space-grotesk",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Magnus'25",
@@ -18,7 +22,7 @@ export default function RootLayout({
   return (
     <GoogleOAuthProvider clientId={CLIENT_ID}>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={`${inter.className} ${space_grotesk.variable}`}>
           <div className="h-screen w-screen">{children}</div>
         </body>
       </html>
