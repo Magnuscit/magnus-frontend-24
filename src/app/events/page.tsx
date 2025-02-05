@@ -43,8 +43,8 @@ export default function Events() {
 	if (!data)
 		return (
 			<main className="w-full overflow-hidden font-space min-h-screen flex flex-col gap-6 items-start px-20">
-				{[...Array(20)].map((_) => (
-					<h1 className="text-7xl font-black text-accent">LOADING...</h1>
+				{[...Array(20)].map((_, i) => (
+					<h1 key={i} className="text-7xl font-black text-accent font-space">LOADING...</h1>
 				))}
 			</main>
 		);
