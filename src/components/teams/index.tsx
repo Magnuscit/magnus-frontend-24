@@ -210,7 +210,7 @@ function TeamPage() {
 						<div className="p-2 text-2xl font-medium">RISHIKUMARAN M</div>
 						<hr className="mt-6" />
 						<div className="flex flex-row items-center justify-between mt-auto">
-							<div className="px-2 pt-[0.5px] text-xl">EVENTS LEAD</div>
+							<div className="px-2 pt-[0.5px] text-xl">TREASURER</div>
 							<div className="flex flex-row gap-2 pr-2">
 								<a href="https://www.instagram.com/rishikum4r4n?igsh=ZGszZ2VwbmN3Znll">
 									<IconBrandInstagram className="text-black rounded-full" size={24} />
