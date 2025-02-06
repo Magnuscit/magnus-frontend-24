@@ -6,18 +6,18 @@ import {
 
 function Footer() {
 	return (
-		<div className="w-screen flex flex-col items-start justify-start pt-4 bg-cream2 relative font-space mix-blend-screen">
+		<div className="w-screen flex flex-col items-start justify-start pt-4 bg-cream2 relative font-space mix-blend-screen ">
 			<div className="w-full text-center text-black overflow-hidden h-full">
 				<div className="text-xl sm:text-2xl md:text-3xl flex flex-row items-center justify-between px-8 p-3 font-bold w-full bg-black text-cream py-5 shadow-lg">
-					<div className="w-1/3 text-left flex flex-row gap-2 text-[13px] ">
+					<div className="w-1/3 text-left md:flex flex-row gap-2 text-[13px] hidden ">
 						<a href="/term-and-condition" className="hover:underline"><div >TERMS & CONDITIONS</div></a>
 						*
 						<a href="/shipping-policy" className="hover:underline"><div >SHIPPING POLICY</div></a>
 						*
 						<a href="/cancellation-policy" className="hover:underline"><div >CANCELLATION POLICY</div></a>
 					</div>
-					<h1 className="text-cream w-1/3 text-2x text-center font-glb font-bold">&copy; MAGNUS</h1>
-					<div className="flex w-1/3 space-x-1 flex-row items-center justify-end">
+					<h1 className="text-cream text-center font-space font-bold">&copy; MAGNUS</h1>
+					<div className="flex  flex-row items-center justify-end">
 						<a href="https://www.instagram.com/magnus.cit/"><IconBrandInstagram
 							className="cursor-pointer text-cream p-3 rounded-full"
 							size={44}

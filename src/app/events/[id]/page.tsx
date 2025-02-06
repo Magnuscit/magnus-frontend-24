@@ -26,7 +26,7 @@ const Event = ({ params: { id } }: { params: { id: string } }) => {
 
 	if (!data)
 		return (
-			<main className="w-full overflow-hidden font-space min-h-screen flex flex-col gap-6 items-start px-20">
+			<main className="w-full overflow-hidden font-space min-h-screen flex flex-col gap-6 items-start ">
 				{[...Array(20)].map((_, i) => (
 					<h1 key={i} className="text-7xl font-black text-accent font-space">LOADING...</h1>
 				))}

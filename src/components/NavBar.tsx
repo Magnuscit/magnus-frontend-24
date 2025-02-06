@@ -38,6 +38,11 @@ export default function NavBar() {
           <h1 className="hover:text-accent">Team</h1>
         </Link>
         */}
+				<div className="w-full text-left flex flex-col gap-2 text-[13px] md:hidden items-end mt-20">
+					<a href="/term-and-condition" className="hover:underline"><div >TERMS & CONDITIONS *</div></a>
+					<a href="/shipping-policy" className="hover:underline"><div >SHIPPING POLICY *</div></a>
+					<a href="/cancellation-policy" className="hover:underline"><div >CANCELLATION POLICY *</div></a>
+				</div>
 			</section>
 
 			<div className="flex items-center gap-x-2 bg-cream rounded-full">
