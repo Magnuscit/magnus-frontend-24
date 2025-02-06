@@ -34,14 +34,14 @@ export default function ProfileButton() {
 			</section>
 
 			<section
-				className={`bg-cream font-space absolute top-12 right-0 text-accent border-black border text-center text-sm min-w-52 transition-all ${!isOpen && "hidden"}`}
+				className={`bg-cream font-gro absolute top-12 right-0 text-accent border-black border text-center text-sm min-w-52 transition-all ${!isOpen && "hidden"} py-2`}
 				ref={menuRef}
 			>
 				{auth === null ? (
 					<div className="p-0 flex flex-col items-center justify-between">
 						<button
 							onClick={() => login()}
-							className="cursor-pointer bg-accent text-cream p-3 font-bold hover:bg-accent-hover w-full h-1/2 hover:text-white"
+							className="font-space cursor-pointer bg-accent text-cream p-3 font-bold hover:bg-accent-hover w-full h-1/2 hover:text-white"
 						>
 							LOGIN
 						</button>
