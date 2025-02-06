@@ -329,6 +329,35 @@ function TeamPage() {
               width={200}
               height={100}
               alt=""
+              src="https://ik.imagekit.io/lovelin/velavan.jpeg?updatedAt=1738809371527"
+              className="w-[450px] h-2/3 object-cover mt-4"
+            />
+            <div className="p-2 text-2xl font-medium">R VELAVAN</div>
+            <hr className="mt-6" />
+            <div className="flex flex-row items-center justify-between mt-auto">
+              <div className="px-2 pt-[0.5px] text-xl">HOSPITALITY LEAD</div>
+              <div className="flex flex-row gap-2 pr-2">
+                <a href="https://www.instagram.com/velavan_1011">
+                  <IconBrandInstagram
+                    className="text-black rounded-full"
+                    size={24}
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/velavan-r-231240293/">
+                  <IconBrandLinkedin
+                    className="text-black rounded-full"
+                    size={24}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full max-w-[350px] h-[400px] flex flex-col bg-cream-500 shadow-lg border border-black">
+            <Image
+              width={200}
+              height={100}
+              alt=""
               src="https://media.discordapp.net/attachments/763290505022013473/1336752303822340260/image.png?ex=67a4f318&is=67a3a198&hm=5b342ec43f6feac081851e492968e31f3252c49fdf6c42a8ad0b56d39377ecd7&=&format=webp&quality=lossless&width=784&height=700"
               className="w-[450px] h-2/3 object-cover mt-4"
             />
