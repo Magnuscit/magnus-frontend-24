@@ -104,6 +104,7 @@ function LandingPage() {
 						relevant practices and inculcating human values to address
 						global challenges through novelty and sustainability.
 					</p>
+          <a href="/events" className="bg-black text-cream px-20 py-3 font-bold rounded-sm">EVENTS</a>
 				</div>
 
 				{/* Glaray section */}

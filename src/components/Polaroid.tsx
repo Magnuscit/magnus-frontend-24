@@ -20,11 +20,11 @@ function Polaroid({
         {!!!image ? (
           <div className="bg-black h-0 flex-grow w-full " />
         ) : (
-          <Image className="bg-black h-full w-full object-contain "
+          <Image className="bg-black h-full w-full object-cover "
             src={image}
             alt=""
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
         )}
       </div>
