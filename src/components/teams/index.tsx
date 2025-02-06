@@ -315,7 +315,7 @@ function TeamPage() {
             <div className="flex flex-row items-center justify-between mt-auto">
               <div className="px-2 pt-[0.5px] text-xl">DOCUMENTATION LEAD</div>
               <div className="flex flex-row gap-2 pr-2">
-                <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav">
+                <a href="https://in.linkedin.com/in/varshha-a-105146216">
                   <IconBrandLinkedin
                     className="text-black rounded-full"
                     size={24}
@@ -329,7 +329,7 @@ function TeamPage() {
               width={200}
               height={100}
               alt=""
-              src="https://ik.imagekit.io/lovelin/velavan.jpeg?updatedAt=1738809371527"
+              src="https://ik.imagekit.io/lovelin/IMG_5417.jpg?updatedAt=1738834630014"
               className="w-[450px] h-2/3 object-cover mt-4"
             />
             <div className="p-2 text-2xl font-medium">R VELAVAN</div>
