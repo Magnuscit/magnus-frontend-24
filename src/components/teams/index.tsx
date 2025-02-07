@@ -193,21 +193,21 @@ function TeamPage() {
               width={200}
               height={100}
               alt=""
-              src="https://ik.imagekit.io/lovelin/1735536107661.jpeg"
+              src="https://media.discordapp.net/attachments/763290505022013473/1336749331843387494/image.png?ex=67a4f054&is=67a39ed4&hm=7f8b14374c66e31fdbe36f799e45d85a5d3001520a4eaed2857381db2087a227&=&format=webp&quality=lossless&width=1216&height=1678"
               className="w-[450px] h-2/3 object-cover mt-4"
             />
-            <div className="p-2 text-2xl font-medium">LOVELIN DHONI J B</div>
+            <div className="p-2 text-2xl font-medium">SHAN CHACKO J</div>
             <hr className="mt-6" />
             <div className="flex flex-row items-center justify-between mt-auto">
-              <div className="px-2 pt-[0.5px] text-xl">WEB DEV LEAD</div>
+              <div className="px-2 pt-[0.5px] text-xl">CROWD CONTROL</div>
               <div className="flex flex-row gap-2 pr-2">
-                <a href="https://github.com/lovelindhoni">
-                  <IconBrandGithub
+                <a href="https://www.instagram.com/itz_me_shanchacko/">
+                  <IconBrandInstagram
                     className="text-black rounded-full"
                     size={24}
                   />
                 </a>
-                <a href="https://linkedin.com/in/lovelindhoni/">
+                <a href="https://www.linkedin.com/in/shan-chacko-j-750323210/">
                   <IconBrandLinkedin
                     className="text-black rounded-full"
                     size={24}
@@ -302,6 +302,35 @@ function TeamPage() {
               </div>
             </div>
           </div>
+          <div className="w-full max-w-[350px] h-[400px] flex flex-col bg-cream-500 shadow-lg border border-black">
+            <Image
+              width={200}
+              height={100}
+              alt=""
+              src="https://ik.imagekit.io/lovelin/1735536107661.jpeg"
+              className="w-[450px] h-2/3 object-cover mt-4"
+            />
+            <div className="p-2 text-2xl font-medium">LOVELIN DHONI J B</div>
+            <hr className="mt-6" />
+            <div className="flex flex-row items-center justify-between mt-auto">
+              <div className="px-2 pt-[0.5px] text-xl">WEB DEV LEAD</div>
+              <div className="flex flex-row gap-2 pr-2">
+                <a href="https://github.com/lovelindhoni">
+                  <IconBrandGithub
+                    className="text-black rounded-full"
+                    size={24}
+                  />
+                </a>
+                <a href="https://linkedin.com/in/lovelindhoni/">
+                  <IconBrandLinkedin
+                    className="text-black rounded-full"
+                    size={24}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="w-full max-w-[350px] h-[400px] flex flex-col bg-cream-500 shadow-lg border border-black">
             <Image
               width={200}
@@ -457,34 +486,6 @@ function TeamPage() {
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/manaseswar14?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                  <IconBrandLinkedin
-                    className="text-black rounded-full"
-                    size={24}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="w-full max-w-[350px] h-[400px] flex flex-col bg-cream-500 shadow-lg border border-black">
-            <Image
-              width={200}
-              height={100}
-              alt=""
-              src="https://media.discordapp.net/attachments/763290505022013473/1336749331843387494/image.png?ex=67a4f054&is=67a39ed4&hm=7f8b14374c66e31fdbe36f799e45d85a5d3001520a4eaed2857381db2087a227&=&format=webp&quality=lossless&width=1216&height=1678"
-              className="w-[450px] h-2/3 object-cover mt-4"
-            />
-            <div className="p-2 text-2xl font-medium">SHAN CHACKO J</div>
-            <hr className="mt-6" />
-            <div className="flex flex-row items-center justify-between mt-auto">
-              <div className="px-2 pt-[0.5px] text-xl">CROWD CONTROL</div>
-              <div className="flex flex-row gap-2 pr-2">
-                <a href="https://www.instagram.com/itz_me_shanchacko/">
-                  <IconBrandInstagram
-                    className="text-black rounded-full"
-                    size={24}
-                  />
-                </a>
-                <a href="https://www.linkedin.com/in/shan-chacko-j-750323210/">
                   <IconBrandLinkedin
                     className="text-black rounded-full"
                     size={24}
