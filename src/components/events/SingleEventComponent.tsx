@@ -194,7 +194,7 @@ const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
             </a>
           ) : (
             <button className="bg-gray-500 text-white text-2xl font-bold px-3 py-2 mt-4 cursor-not-allowed">
-              Opening Shortly!
+              Online Registrations Closed!
             </button>
           )
         }
