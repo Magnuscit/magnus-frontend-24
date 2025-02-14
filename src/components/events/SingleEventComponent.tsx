@@ -190,7 +190,8 @@ const SingleEventComponent = ({ eventData }: { eventData: EVENT }) => {
               target="_blank"
               className="bg-accent cursor-pointer text-cream text-2xl font-bold px-3 py-2 mt-4 hover:bg-accent-hover"
             >
-              * REGISTER *
+              * REGISTER{" "}
+              {eventData.details.limited ? "(Limited Time Offer!!!)" : ""} *
             </a>
           ) : (
             <button className="bg-gray-500 text-white text-2xl font-bold px-3 py-2 mt-4 cursor-not-allowed">
